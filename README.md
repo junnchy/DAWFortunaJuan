@@ -1,2 +1,3 @@
 # DAWFortunaJuan
-Este es un nuevo comentario en el readme
+Archivos de Clase DAW de la UAI 
+Alumno Fortuna Juan 
