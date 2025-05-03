@@ -123,7 +123,7 @@ article .maintitle {
 .navbar{
     background-color: #fff;
     padding: 20px 30px;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center; 
     border-bottom: 1px solid black;
     align-items: center;
@@ -147,30 +147,63 @@ article .maintitle {
     border-right: none;
 }
 
+.barrasup li:first-child {
+    padding-left: 25px;
+}
+
+.barrasup a, a:visited, a:hover{
+    text-decoration: none;
+    color: black;
+    
+}
+
 .imghome{
     max-height: 41.72px;
 }
 
+.navbar_1, .navbar_2, .navbar_3{
+    width: 33%;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
 .navbar_1{
-    width: 33%;
+    text-align: right;
     display: inline-block;
 }
 
-.navbar_2{
-    width: 33%;
+.navbar_1 ul, button{
     display: inline-block;
-
-}
-
-.navbar_3{
-    width: 33%;
-    display: inline-block;
-
+    vertical-align: middle;
 }
 
 .navbar_3 button{
-    padding: 7px 20px;
+    padding: 0 25px;
     margin-right: 10px;
     border-radius: 25px;
     border: 1px solid black;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.navbar_3 svg, span{
+    vertical-align: middle;
+    padding: 0;
+}
+
+.navbar button{
+    background-color: #fff;
+    border: none;
+
+}
+
+#suscrip{
+    background-color: rgb(251,188,5);
+    height: 41px;
+}
+
+#login{
+    border: 1px solid black;
+    height: 41px;
 }
