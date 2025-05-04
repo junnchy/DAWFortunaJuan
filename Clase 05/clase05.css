@@ -54,7 +54,7 @@ button{
 }
 
 article .maintitle {
-    margin: 0 auto;
+    margin: 0 408.5px;
     align-self: center;
 }
 
@@ -166,10 +166,6 @@ article .maintitle {
     padding-left: 25px;
 }
 
-.imghome{
-    max-height: 41.72px;
-}
-
 .navbar_1, .navbar_2, .navbar_3{
     width: 33%;
     display: inline-block;
@@ -179,6 +175,24 @@ article .maintitle {
 
 .navbar_1{
     text-align: right;
+    display: inline-block;
+}
+
+.navbar_2{
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.navbar_2 figure {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.imghome {
+    max-height: 41.72px;
+    vertical-align: middle;
     display: inline-block;
 }
 
@@ -242,11 +256,14 @@ article .maintitle {
 #suscrip{
     background-color: rgb(251,188,5);
     height: 41px;
+    border: none;
+    letter-spacing: 1.2px;
 }
 
 #login{
     border: 1px solid black;
     height: 41px;
+    letter-spacing: 1.2px;
 }
 
 .mobile, .tablet, .desktop{
@@ -271,29 +288,71 @@ article .maintitle {
         text-align: left;
     }
 
-    .img-m {
-        max-height: 350px; 
-    }
-
     .text, .maintitle, .networks {
         padding-left: 24px;
         padding-right: 24px;
     }
 
+    article .maintitle {
+        margin: 0;
+    }
+
     .navbar{
         padding: 0;
     }
-
-    .navbar_1, .navbar_3, .headerdate {
+    
+    .headerdate {
         display: none;
     }
 
     .navbar_1, .navbar_3{
-        width: 9%;
+        width: 12%;
     }
 
     .navbar_2{
-        width: 80%;
+        width: 70%;
+    }
+
+    .navbar_1 ul{
+        display: none;
+    }
+
+    .navbar_3 span{
+        display: none;
+    }
+
+    .imghome {
+        max-height: 30px;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .mainimage {
+        width: 100%;
+        margin: 0; 
+        text-align: center;
+    }
+
+    .img-m{
+        height: auto;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .navbar_2 figure {
+        margin: 0;
+        display: inline-block;
+    }
+
+    #suscrip{
+        display: none;
+    }
+
+    #login{
+        padding: 0;
+        border: none;
     }
 
 }
