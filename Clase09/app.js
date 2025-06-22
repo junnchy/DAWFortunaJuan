@@ -28,7 +28,16 @@ const mensajeDni = document.getElementById("errorDni");
 validar();
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Cargar datos del localStorage
+  // Event listener para cerrar modal
+  document.getElementById("cerrarModal").addEventListener("click", () => {
+    document.getElementById("modal").classList.add("hidden");
+  });
+
+  // Nuevo: asignar función enviarDatos al evento submit del formulario
+  const form = document.getElementById("formulario");
+  form.addEventListener("submit", enviarDatos);
+
+  // Recarga de datos guardados en localStorage
   const datosGuardados = localStorage.getItem("datosFormulario");
   if (datosGuardados) {
     const datos = JSON.parse(datosGuardados);
@@ -41,11 +50,6 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cpos").value = datos.cpos || "";
     document.getElementById("dni").value = datos.dni || "";
   }
-
-  // Listener para cerrar el modal
-  document.getElementById("cerrarModal").addEventListener("click", () => {
-    document.getElementById("modal").classList.add("hidden");
-  });
 });
 
 /*-----------------------Validar Campos----------------------------*/
