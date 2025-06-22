@@ -75,7 +75,7 @@
                 <div class="form-container">
                     <div id="main" class="card card-body">
                         <h2 class="title">Formulario Suscripcion</h2>
-                        <form class="suscrip-form">
+                        <form class="suscrip-form" onsubmit="enviarDatos(event)">
                             <div class="input">
                                 <label for="nombre"><b>Nombre completo: </b></label>
                                 <input type="text" id="nombre" name="nombre">
@@ -122,6 +122,7 @@
                                 <p id="errorDni" class="error"></p>
                             </div>
                             <input type="submit" class="form-btn" value="Suscribirme">
+                            <pre id="resultado"></pre>
                         </form>
                     </div> 
                 </div>
@@ -132,7 +133,15 @@
         </div>
     </footer>
     <script src="app.js"></script>
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-contenido">
+            <span id="cerrarModal" class="modal-cerrar">&times;</span>
+            <h2 id="modalTitulo">Resultado</h2>
+            <p id="modalMensaje">Aquí irá el mensaje de éxito o error</p>
+        </div>
+    </div>
 </body>
 </html>
-</html>
+
 
