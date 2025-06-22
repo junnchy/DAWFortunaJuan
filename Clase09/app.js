@@ -276,7 +276,7 @@ function enviarDatos(event) {
     .then(data => {
         document.getElementById("modal").classList.remove("hidden");
         document.getElementById("modalTitulo").textContent = "✅ Suscripción exitosa";
-        document.getElementById("modalMensaje").textContent =  "Datos enviados correctamente. Primer título: " + data[0].title;
+        document.getElementById("modalMensaje").textContent =  "Gracias por suscribirte. Tus datos fueron enviados correctamente.";
         const datos = {
             nombre,
             email,
