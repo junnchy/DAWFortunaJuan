@@ -3,7 +3,7 @@ pedirDatos();
 function pedirDatos(event) {
 
     const url = "https://rickandmortyapi.com/api/character";
-    const li = document.getElementById("listadoPersonajes");
+    const tabla = document.getElementById("cuerpoTabla");
 
     
     fetch(url)
@@ -14,10 +14,16 @@ function pedirDatos(event) {
         var html = "";
 
         for (let personaje of data.results) {
-            html += `<li>${personaje.name}</li>`;
+            html += `<tr> 
+                        <td><img src="${personaje.image}" class="perfil"></td>
+                        <td>${personaje.name}</td>
+                        <td>${personaje.status}</td>
+                        <td>${personaje.species}</td>
+                        <td><a href="${personaje.url}"> Ver Mas </a></td>
+                    <tr>`;
         }
 
-        li.innerHTML = html;
+        tabla.innerHTML = html;
         
     })
     .catch(error => {
