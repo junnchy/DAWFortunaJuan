@@ -1,0 +1,31 @@
+/* body{
+    background-image: url("rym.png");
+    background-size: cover;
+} */
+
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    color: rgb(156,195,216);
+}
+
+.titulo{
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px;
+    border: 7px solid rgb(121,99,57);
+}
+
+.personajes{
+    background-color: rgb(251,246,108);
+    padding: 100px;
+    margin-top: 60px;
+    color: rgb(37,52,79);
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
