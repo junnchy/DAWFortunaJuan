@@ -50,7 +50,15 @@ input{
     margin-left: 10px;
     border: 1px solid;
     padding: 10px;
-    width: 200px;
+    width: 150px;
+    border-radius: 4px;
+}
+
+select{
+    margin-left: 10px;
+    border: 1px solid;
+    padding: 10px;
+    width: 150px;
     border-radius: 4px;
 }
 
