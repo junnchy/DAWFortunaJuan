@@ -49,8 +49,21 @@
                 <tbody id="cuerpoTabla">
                 </tbody>
             </table>
+            <div id="paginacion">
+                <button id="anterior">Anterior</button>
+                <span id="paginaActual">1</span>
+                <button id="siguiente">Siguiente</button>
+            </div>
         </div>
     </div>
-    <script src="appTp2.js"></script>    
+    <script src="appTp2.js"></script>
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-contenido">
+            <span id="cerrarModal" class="modal-cerrar">&times;</span>
+            <h2 id="modalTitulo">Personaje</h2>
+            <p id="modalMensaje"></p>
+        </div>
+    </div>  
 </body>
 </html>
